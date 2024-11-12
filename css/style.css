@@ -1,0 +1,31 @@
+.rectangle1 { opacity: 0.5;
+    animation: rec1 6s infinite ease;
+}
+.box {
+    background: pink;
+    width: 6vw;
+    height: 15vw;
+    margin: 2%;
+    text-align: center;
+    line-height: 15vh;
+}
+.rectangle2 {
+    animation: rec2 6s infinite ease;
+    position: absolute;
+    top: 2%;
+    margin-left: 20%;
+}
+
+@keyframes rec1 {
+    0% { background-color: brown;}
+    50% { background: red; border-radius: 50px;}
+    100% { background-color: #654265;}
+
+}
+
+@keyframes rec2 {
+    0% {top: 0%; rotate: 0deg;}
+    50% { top: 50%; rotate: 360deg; border-radius: 50px;}
+    100% { top: 0%; rotate: 0deg; border-radius: 100px; }
+
+}
